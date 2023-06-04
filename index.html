@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1c80e7a74c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-mastodon.svg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+              <p>Software Devloper</p>
+              <h1>Hi i'm <span>Mansi Sinha</span></h1>
+              <p>Have a look on my linkedin profile <br>(http://www.linkedin.com/in/mansi-sinha-238648198)</br></p>
+           </div>
+       </div>
+  </div>
+  <!-- -----------about-----------  -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/image.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+               <p>To start a career in a challenging and growth-oriented organization to effectively use
+                skills and excel as a professional to achieve greater heights and recognition in
+                career.
+               </p>
+               <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+               </div>
+
+               <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Programming languages</span><br>Java, C</li>
+                    <li><span>Web technologies</span><br>HTML, CSS, js</li>
+                    <li><span>Database</span><br>Mysql</li>
+                    <li><span>Operating Systems</span><br>Windows</li>
+                </ul>
+               </div>
+
+               <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Internship</span><br>I have completed HighRadius Internship Program from 28th January 2022 to 13th April
+                        2022, where I have built and deployed an AI Enabled Fintech B2B Cloud Application.</li>
+                </ul>
+               </div>
+
+               <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2017</span><br>10th board<br>ST. XAVIER’S PUBLIC SCHOOL, SAMASTIPUR<br> scored 9.8 CGPA</li>
+                    <li><span>2019</span><br>12th board<br>P C HIGH, PATSA, SAMASTIPUR<br>scored 66.66%</li>
+                    <li><span>2023</span><br>B. Tech (IT)<br>NARULA INSTITUTE OF TECHNOLOGY, KOLKATA<br>scored 80%</li>
+                </ul>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------services-------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>web Design</h2>
+                <p>Created a my on Portfolio website using Html, css, js
+                  </p>
+                  <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-regular fa-crop-simple"></i>
+                <h2>web devlopment</h2>
+                <p>Created an Air Quality Prediction system using ML. My model can predict the current data with 95% accuracy it will successfully
+                    predict the upcoming air quality index of any data within a given region.</p>
+                  <a href="#">learn more</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- -----------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Air Quality Prediction system</h3>
+                    <p>ML based web application on Air Quality Predication</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Heart Disease Research System with Machine Learning</h3>
+                    <p>This project showed examples of how we can use machine learning methods to perform heart disease prediction with decent
+                        accuracy. Using underlying symptoms, biological indicators, medicinal history, and personal
+                        details, a machine learning algorithm can very effectively tell us the risk of getting a
+                        particular disease (including heart diseases) that the person faces. A deep neural network can
+                        also be trained to look at X-rays, cardiograms, and other complex data to assist a clinical
+                        decision support system and clinicians in diagnosing various diseases.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Cloud Application</h3>
+                    <p>I have built and deployed an AI Enabled Fintech B2B Cloud Application.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<!-- -----------content----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sinhamansi89871@gmail.com</p>
+                <p><i class="fa-duotone fa-phone"></i>9110957605</p>
+                <div class="social-icons">
+                 <a href=""><i class="fa-brands fa-facebook"></i></a>
+                 <a href=""><i class="fa-brands fa-instagram"></i></a>
+                 <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Mansi-sinha-Resume2023.pdf" download class="btn btn2">Download CV</a>
+          </div>
+         <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">submit</button>
+            </form>
+            <span id="msg"></span>
+         </div>
+       
+        </div>
+    
+    </div>
+    <div class="copyright">
+        <p>copyright © Mansi.<i class="fa-solid fa-chess-king"></i></p>
+    </div>
+
+</div>
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzJgDVQeoq04advE6oDppchp-mwpNtK4CpK19wllQjWUfUHVzME5D_ceAR_R8NuJczgcw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
